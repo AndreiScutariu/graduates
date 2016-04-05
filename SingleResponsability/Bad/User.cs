@@ -20,8 +20,7 @@
         public void Update()
         {
         }
-
-
+        
         public bool IsValid()
         {
             bool isValid = false;
@@ -29,8 +28,7 @@
 
             return isValid;
         }
-
-
+        
         public int GetAge()
         {
             int age = 0;
@@ -38,9 +36,5 @@
 
             return age;
         }
-
-
-
-
     }
 }
