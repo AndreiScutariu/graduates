@@ -1,11 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosed", "OpenClosed\OpenClosed.csproj", "{29B841FB-87DF-4B73-9B78-AF05DB79943D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsability", "SingleResponsability\SingleResponsability.csproj", "{99BE5203-8690-4D20-9B4F-51DB1C1EB453}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SOLID", "SOLID", "{1CA96DE2-5884-411B-AADE-027A9978FAD8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP", "OOP", "{02246DB5-FB52-438B-A988-BA50B4A250FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{5D4B733D-F318-4881-B62A-8AB63891D328}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composition", "Composition\Composition.csproj", "{64DE6D7E-874D-4D55-AD2D-92ED4824AC12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +29,20 @@ Global
 		{99BE5203-8690-4D20-9B4F-51DB1C1EB453}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99BE5203-8690-4D20-9B4F-51DB1C1EB453}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99BE5203-8690-4D20-9B4F-51DB1C1EB453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D4B733D-F318-4881-B62A-8AB63891D328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D4B733D-F318-4881-B62A-8AB63891D328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D4B733D-F318-4881-B62A-8AB63891D328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D4B733D-F318-4881-B62A-8AB63891D328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64DE6D7E-874D-4D55-AD2D-92ED4824AC12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64DE6D7E-874D-4D55-AD2D-92ED4824AC12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64DE6D7E-874D-4D55-AD2D-92ED4824AC12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64DE6D7E-874D-4D55-AD2D-92ED4824AC12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5D4B733D-F318-4881-B62A-8AB63891D328} = {02246DB5-FB52-438B-A988-BA50B4A250FA}
+		{64DE6D7E-874D-4D55-AD2D-92ED4824AC12} = {02246DB5-FB52-438B-A988-BA50B4A250FA}
 	EndGlobalSection
 EndGlobal
