@@ -39,8 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AviPlayer.cs" />
+    <Compile Include="BasePlayer.cs" />
+    <Compile Include="Driver.cs" />
+    <Compile Include="LgVideoPlayer.cs" />
+    <Compile Include="MagicVideoPlayer.cs" />
+    <Compile Include="MediaSkipper.cs" />
+    <Compile Include="Mp3Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RevolutionaryPlayer.cs" />
+    <Compile Include="SonyMp3Player.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
