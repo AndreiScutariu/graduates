@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpBasicAnca", "CSharpBa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpBasicAndrei", "CSharpBasic2\CSharpBasicAndrei.csproj", "{992D06AB-B646-4BF7-8CED-3984B7BEBC05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{5529944C-4D55-493D-BE7A-CCCAF405E989}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{992D06AB-B646-4BF7-8CED-3984B7BEBC05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{992D06AB-B646-4BF7-8CED-3984B7BEBC05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{992D06AB-B646-4BF7-8CED-3984B7BEBC05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5529944C-4D55-493D-BE7A-CCCAF405E989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5529944C-4D55-493D-BE7A-CCCAF405E989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5529944C-4D55-493D-BE7A-CCCAF405E989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5529944C-4D55-493D-BE7A-CCCAF405E989}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,5 +68,6 @@ Global
 		{64DE6D7E-874D-4D55-AD2D-92ED4824AC12} = {02246DB5-FB52-438B-A988-BA50B4A250FA}
 		{497E380C-4C2A-47BB-A890-5D2A13EE421C} = {5048B93E-1E86-435F-BD7B-B8E42BA2297C}
 		{992D06AB-B646-4BF7-8CED-3984B7BEBC05} = {5048B93E-1E86-435F-BD7B-B8E42BA2297C}
+		{5529944C-4D55-493D-BE7A-CCCAF405E989} = {1CA96DE2-5884-411B-AADE-027A9978FAD8}
 	EndGlobalSection
 EndGlobal

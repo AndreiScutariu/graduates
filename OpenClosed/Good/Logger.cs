@@ -2,44 +2,16 @@
 {
     public class Logger
     {
-        private readonly TypeLog _typelog;
+        readonly ILogger _logger;
 
-        public Logger(TypeLog typelog)
+        public Logger(ILogger logger)
         {
-            _typelog = typelog;
+            this._logger = logger;
         }
 
         public void WriteLog(string message)
         {
-            switch (_typelog)
-            {
-                case TypeLog.File:
-                    WriteInFile(message);
-                    break;
-                case TypeLog.DataBase:
-                    WriteInDataBase(message);
-                    break;
-                default:
-                    break;
-            }
+            _logger.WriteLog(message);
         }
-
-        private void WriteInFile(string message)
-        {
-            //Do stuff
-        }
-
-        private void WriteInDataBase(string message)
-        {
-            //Do stuff
-        }
-
     }
-
-    public enum TypeLog
-    {
-        File,
-        DataBase
-    }
-
 }

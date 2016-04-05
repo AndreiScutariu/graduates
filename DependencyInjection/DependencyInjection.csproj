@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{29B841FB-87DF-4B73-9B78-AF05DB79943D}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{5529944C-4D55-493D-BE7A-CCCAF405E989}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OpenClosed</RootNamespace>
-    <AssemblyName>OpenClosed</AssemblyName>
+    <RootNamespace>DependencyInjection</RootNamespace>
+    <AssemblyName>DependencyInjection</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -44,16 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Good\ConsoleLogger.cs" />
-    <Compile Include="Good\DatabaseLogger.cs" />
-    <Compile Include="Good\FileLogger.cs" />
-    <Compile Include="Good\ILogger.cs" />
-    <Compile Include="Bad\Logger.cs" />
-    <Compile Include="Good\Logger.cs" />
+    <Compile Include="Bad\AccountComponent.cs" />
+    <Compile Include="Bad\SecurityService.cs" />
+    <Compile Include="Bad\Startup.cs" />
+    <Compile Include="Good\AccountComponent.cs" />
+    <Compile Include="Good\SecurityService.cs" />
+    <Compile Include="Good\Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenClosed\OpenClosed.csproj">
+      <Project>{29b841fb-87df-4b73-9b78-af05db79943d}</Project>
+      <Name>OpenClosed</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
